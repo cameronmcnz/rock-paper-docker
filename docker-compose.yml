@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  apache:
+    image: 'httpd:latest'
+    ports:
+      - '80:80'
+    volumes:
+      - ${PWD}/website:/usr/local/apache2/htdocs
